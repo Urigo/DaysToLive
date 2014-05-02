@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+</head>
+<body>
+
+<h1 id="days"></h1>
+
+<script type="text/javascript">
+  var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
+  var firstDate = new Date(2065,08,31);
+  var secondDate = new Date(1985,08,31);
+
+  var diffDays = Math.round(Math.abs((firstDate.getTime() - secondDate.getTime())/(oneDay)));
+
+  document.getElementById('days').innerHTML = diffDays.toString();
+</script>
+
+</body>
+</html>
